@@ -205,11 +205,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump()
     {
-        if (_isGrounded)
+        if (_isGrounded && !_isPunching)
         {
             Vector3 jumpDirection = Vector3.up;
             _rigidbody.AddForce(jumpDirection * _jumpForce, ForceMode.Impulse);
-            _animator.SetTrigger("Jump");
+            _animator.SetBool("IsJump", true);
+            _animator.SetBool("IsJump", false);
         }
     }
 
@@ -238,7 +239,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void StartClimb()
+    /*private void StartClimb()
     {
         bool isInFrontOfClimbingWall = Physics.Raycast(_climbDetector.position,
             transform.forward,
@@ -260,7 +261,29 @@ public class PlayerMovement : MonoBehaviour
             _animator.SetBool("IsClimbing", true);
             _collider.center = Vector3.up * 1.3f;
         }
+    }*/
+    
+    private void StartClimb()
+    {
+        bool isInFrontOfClimbingWall = Physics.Raycast(_climbDetector.position, transform.forward, out RaycastHit hit, _climbCheckDistance, _climbableLayer);
+        bool isNotClimbing = _playerStance != PlayerStance.Climb;
+    
+        if (isInFrontOfClimbingWall && _isGrounded && isNotClimbing)
+        {
+            _cameraManager.SetFPSClampedCamera(true, transform.rotation.eulerAngles);
+            Vector3 climbablePoint = hit.collider.bounds.ClosestPoint(transform.position);
+            Vector3 direction = (climbablePoint - transform.position).normalized;
+            direction.y = 0;
+            transform.rotation = Quaternion.LookRotation(direction);
+            Vector3 offset = (transform.forward * _climbOffset.z) - (Vector3.up * _climbOffset.y);
+            transform.position = hit.point - offset;
+            _playerStance = PlayerStance.Climb;
+            _animator.SetBool("IsClimbing", true);
+            _rigidbody.useGravity = false;
+            _cameraManager.SetTPSFieldOfView(70);
+        }
     }
+
     
     private void CancelClimb()
     {
@@ -319,7 +342,7 @@ public class PlayerMovement : MonoBehaviour
     
     private void Punch()
     {
-        if (!_isPunching && _playerStance == PlayerStance.Stand)
+        if (!_isPunching && _playerStance == PlayerStance.Stand && _isGrounded)
         {
             _isPunching = true;
             if (_combo < 3)
