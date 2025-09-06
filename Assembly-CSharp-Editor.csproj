@@ -899,6 +899,12 @@
     <Reference Include="PPv2URPConverters">
       <HintPath>/Users/witoirawan/UnityProject/wito-unity3C/Library/ScriptAssemblies/PPv2URPConverters.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ProBuilder.Editor">
+      <HintPath>/Users/witoirawan/UnityProject/wito-unity3C/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+      <HintPath>/Users/witoirawan/UnityProject/wito-unity3C/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Rendering.LightTransport.Editor">
       <HintPath>/Users/witoirawan/UnityProject/wito-unity3C/Library/ScriptAssemblies/Unity.Rendering.LightTransport.Editor.dll</HintPath>
     </Reference>
@@ -910,6 +916,9 @@
     </Reference>
     <Reference Include="Unity.Splines.Editor">
       <HintPath>/Users/witoirawan/UnityProject/wito-unity3C/Library/ScriptAssemblies/Unity.Splines.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+      <HintPath>/Users/witoirawan/UnityProject/wito-unity3C/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Editor">
       <HintPath>/Users/witoirawan/UnityProject/wito-unity3C/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
@@ -955,6 +964,9 @@
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
       <HintPath>/Users/witoirawan/UnityProject/wito-unity3C/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder">
+      <HintPath>/Users/witoirawan/UnityProject/wito-unity3C/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>/Users/witoirawan/UnityProject/wito-unity3C/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
