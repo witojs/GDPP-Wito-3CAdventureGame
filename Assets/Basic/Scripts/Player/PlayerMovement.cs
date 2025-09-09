@@ -310,8 +310,12 @@ public class PlayerMovement : MonoBehaviour
             // 2. Position the player precisely relative to the wall.
             // This moves the player to the hit point, then pushes them slightly away from the wall (along the normal)
             // and adjusts their vertical position based on your offset.
-            Vector3 offset = (hit.normal * _climbOffset.z) - (Vector3.up * _climbOffset.y);
-            transform.position = hit.point + offset;
+            /*Vector3 offset = (hit.normal * _climbOffset.z) - (Vector3.up * _climbOffset.y);
+            transform.position = hit.point + offset;*/
+            
+            Vector3 targetPosition = hit.point + (hit.normal * _climbOffset.z);
+            targetPosition.y = transform.position.y;
+            transform.position = targetPosition;
 
             // --- The rest of your state-change logic is good ---
             _playerStance = PlayerStance.Climb;
