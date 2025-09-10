@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Basic/Scenes/Gameplay.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Game/Scene/ForestHillMainMenu.unity
+    guid: 45aec44ab79874cd3affee9438e60eff
+  - enabled: 1
+    path: Assets/Game/Scene/ForestHillGame.unity
+    guid: fc320879da76b44cb916da37c32c46d9
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

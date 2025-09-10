@@ -42,6 +42,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask _hitLayer;
     
     [SerializeField] private PlayerAudioManager _playerAudioManager;
+    
+    [SerializeField] private Transform _resetCheckpointPosition;
 
     
 
@@ -429,6 +431,15 @@ public class PlayerMovement : MonoBehaviour
             {
                 Destroy(hitObjects[i].gameObject);
             }
+        }
+    }
+    
+    public void ResetPositionToCheckpoint()
+    {
+        if (_resetCheckpointPosition != null)
+        {
+            transform.position = _resetCheckpointPosition.position;
+            transform.rotation = _resetCheckpointPosition.rotation;
         }
     }
 }

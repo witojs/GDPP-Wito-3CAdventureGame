@@ -830,6 +830,9 @@
     <Reference Include="UnityEditor.TestRunner">
       <HintPath>/Users/witoirawan/UnityProject/wito-unity3C/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.2D.Runtime">
+      <HintPath>/Users/witoirawan/UnityProject/wito-unity3C/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.2D.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.InputSystem.ForUI">
       <HintPath>/Users/witoirawan/UnityProject/wito-unity3C/Library/ScriptAssemblies/Unity.InputSystem.ForUI.dll</HintPath>
     </Reference>
@@ -866,20 +869,20 @@
     <Reference Include="Unity.Timeline">
       <HintPath>/Users/witoirawan/UnityProject/wito-unity3C/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Editor.Shared">
-      <HintPath>/Users/witoirawan/UnityProject/wito-unity3C/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Shared.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>/Users/witoirawan/UnityProject/wito-unity3C/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Editor.Shared">
+      <HintPath>/Users/witoirawan/UnityProject/wito-unity3C/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Shared.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
       <HintPath>/Users/witoirawan/UnityProject/wito-unity3C/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.PlasticSCM.Editor">
-      <HintPath>/Users/witoirawan/UnityProject/wito-unity3C/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Toonshader.Editor">
       <HintPath>/Users/witoirawan/UnityProject/wito-unity3C/Library/ScriptAssemblies/Unity.Toonshader.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+      <HintPath>/Users/witoirawan/UnityProject/wito-unity3C/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Multiplayer.Center.Editor">
       <HintPath>/Users/witoirawan/UnityProject/wito-unity3C/Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.dll</HintPath>
@@ -1009,9 +1012,6 @@
     </Reference>
     <Reference Include="Unity.InputSystem">
       <HintPath>/Users/witoirawan/UnityProject/wito-unity3C/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.2D.Runtime">
-      <HintPath>/Users/witoirawan/UnityProject/wito-unity3C/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.2D.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

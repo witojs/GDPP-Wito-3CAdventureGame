@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class GamePlayManager : MonoBehaviour
 {
     [SerializeField] private InputManager _inputManager;
+    [SerializeField] private string _mainMenuSceneName;
     
     private void Start()
     {
@@ -19,6 +20,6 @@ public class GamePlayManager : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene(_mainMenuSceneName);
     }
 }
